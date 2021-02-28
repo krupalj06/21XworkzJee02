@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HappyTours</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+ 	 <servlet-name>homepageservlet</servlet-name>
+ 	 <servlet-class>com.xworkz.happytours.HomePage</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>homepageservlet</servlet-name>
+  <url-pattern>/homepageurl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>registerationServlet</servlet-name>
+  	<servlet-class>com.xworkz.happytours.RegisterPage</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>registerationServlet</servlet-name>
+  	<url-pattern>/registerurl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ 	 <servlet-name>loginservlet</servlet-name>
+  	<servlet-class>com.xworkz.happytours.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 	 <servlet-name>loginservlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
